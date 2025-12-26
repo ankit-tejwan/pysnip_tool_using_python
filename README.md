@@ -3,9 +3,8 @@ pysnip_tool_using_python
 
 
 # Method 1 using pyscreenshot 
-# pyscreenshot/examples/grabfullscreen.py
-
-"Grab the whole screen"
+create a file grabfullscreen.py
+```python
 import pyscreenshot as ImageGrab
 
 # grab fullscreen
@@ -14,11 +13,11 @@ im = ImageGrab.grab()
 # save image file
 im.save("fullscreen.png")
 
+```
+# For custom area 
+create a file grabbox.py
 
-# custom area 
-# pyscreenshot/examples/grabbox.py
-
-"Grab the part of the screen"
+```python 
 import pyscreenshot as ImageGrab
 
 # part of the screen
@@ -26,44 +25,9 @@ im = ImageGrab.grab(bbox=(10, 10, 510, 510))  # X1,Y1,X2,Y2
 
 # save image file
 im.save("box.png")
-
+ ```
 # Automated with multi-display functionality 
 
-
-
-
-
-# for more info, read these documentation here 
-https://github.com/ponty/pyscreenshot
-# PyScreenshot Tool Using Python
-
-## Method 1: Using PyScreenshot
-
-### Grab the Whole Screen
-
-```python
-import pyscreenshot as ImageGrab
-
-# Capture the entire screen
-image = ImageGrab.grab()
-
-# Save the image file
-image.save("fullscreen.png")
-```
-
-### Grab a Custom Area
-
-```python
-import pyscreenshot as ImageGrab
-
-# Define the area of the screen to capture (X1, Y1, X2, Y2)
-image = ImageGrab.grab(bbox=(10, 10, 510, 510))
-
-# Save the image file
-image.save("box.png")
-```
-
-This method can also be automated and works with multiple displays.
 # Method 2: using mss 
 https://python-mss.readthedocs.io/
 ```python
@@ -89,7 +53,11 @@ def multi_display_screenshot(snip:bool):
 
 multi_display_screenshot(True)
 
-  
-
 ```
+
+<img width="2560" height="1600" alt="monitor_1_2ad40e1a-ca0d-4c8e-bbcc-5f45b3fa76a5" src="https://github.com/user-attachments/assets/a1872f6e-bd62-4906-8d7b-a591df670d93" />
+
+
+
 For more information, check the documentation [here](https://github.com/ponty/pyscreenshot).
+
